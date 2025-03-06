@@ -28,7 +28,6 @@ private final MyMethod myMethod;
 
     @Override
     public void run(String... args) throws Exception {
-      myMethod2.addUser();
-       myMethod.addUser();
+        System.out.println(myMethod2.addUser());
     }
 }

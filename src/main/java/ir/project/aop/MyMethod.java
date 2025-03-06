@@ -14,10 +14,11 @@ public class MyMethod {
         this.userRepository = userRepository;
     }
 
-    public void addUser() {
+    public String addUser() {
         User user = new User("hesan","123");
 
         userRepository.save(user);
         System.out.println("run");
+        return "success";
     }
 }

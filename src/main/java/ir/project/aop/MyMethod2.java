@@ -13,10 +13,12 @@ public class MyMethod2 {
         this.userRepository = userRepository;
     }
 
-    public void addUser() {
+    public String addUser() {
         User user = new User("hesan2","123");
 
         userRepository.save(user);
         System.out.println("run");
+        throw new RuntimeException("");
+       // return "success";
     }
 }
